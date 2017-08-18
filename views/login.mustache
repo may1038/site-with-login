@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="loginWrapper">
+    <div class="message">
+      {{#message}}
+        {{message}}
+      {{/message}}
+    </div>
+    <div class="formWrapper">
+      <form class="" action="/authorized" method="post">
+        <div class="username">
+          <span>Username</span>
+          <input type="text" name="username" value="" placeholder="USERNAME">
+        </div>
+
+        <div class="password">
+          <span>Password</span>
+          <div class="passwordText">
+            <input type="password" name="password" value="" placeholder="PASSWORD">
+          </div>
+        </div>
+
+        <div class="login">
+          <!-- type should always be submit -->
+          <button type="submit" name="button" value="">Login</button>
+        </div>
+    </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
